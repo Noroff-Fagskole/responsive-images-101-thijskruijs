@@ -1,0 +1,59 @@
+:root {
+  --mobile: 767px;
+  --tablet: 1024px;
+  --desktop: 1080px;
+  --max-width: 1024px;
+  --padding-small: 0.5em;
+  --padding-medium: 1em;
+  --padding-large: 1.5;
+  --default-font: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--default-font);
+}
+
+.hero-banner {
+  background-color: pink;
+}
+
+.hero-banner .container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  height: 420px;
+  padding: var(--padding-large);
+}
+
+.bg-image-no-repeat-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+@media screen and (max-width: 767px) {
+  /* Mobile */
+  .bg-runner {
+    background-image: url('../img/mobile-banner.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Tablet */
+  .bg-runner {
+    background-image: url('../img/tablet-banner.jpg');
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Desktop */
+  .bg-runner {
+    background-image: url('../img/tablet-banner.jpg');
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  /* Desktop */
+  .bg-runner {
+    background-image: url('../img/desktop-banner.jpg');
+  }
+}
